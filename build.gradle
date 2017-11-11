@@ -1,21 +1,10 @@
-buildscript {
-    repositories {
-        mavenLocal()
-        jcenter()
-    }
-    dependencies {
-        classpath "de.dfki.mary:gradle-marytts-kaldi-mfa-plugin:0.2.0-SNAPSHOT"
-    }
-}
-
 plugins {
     id 'de.dfki.mary.voicebuilding-festvox' version '5.2.2'
+    id 'de.dfki.mary.voicebuilding.marytts-kaldi-mfa' version "0.2.0"
 }
 
 group 'de.dfki.mary'
 version '5.3-SNAPSHOT'
-
-apply plugin: 'de.dfki.mary.voicebuilding.marytts-kaldi-mfa'
 
 repositories {
     ivy {
